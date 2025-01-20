@@ -14,7 +14,7 @@ mkdir -p "$TEMP_DIR"
 # clear
 echo "Installing Android Doctor..."
 # Download the .deb file to the temporary directory
-curl -O "$Download_Url" -o "$TEMP_DIR"
+curl -OJ "$Download_Url" -o "$TEMP_DIR"
 
 echo "\n\n\n"
 ls $TEMP_DIR
