@@ -8,7 +8,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Create a temporary directory
-TEMP_DIR="/usr/local/temp/utsav/temp/adoc/deb/"
+TEMP_DIR="/usr/local/temp/utsav/temp/adoc/deb"
 mkdir -p "$TEMP_DIR"
 # clear
 # clear
