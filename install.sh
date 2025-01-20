@@ -55,10 +55,10 @@ EOL
 echo "\nInstallation complete. Please type android-doctor to use the Program"
 echo "Alternatively, you can use the adoc command to launch the app if you prefer"
 
-echo "\n\nApplication will open by default after installation"
-echo "Press ctrl+c or close the app to exit"
+#echo "\n\nApplication will open by default after installation"
+#echo "Press ctrl+c or close the app to exit"
 echo "Always prefer application over command line \n\n"
 
-adoc
+#adoc
 echo "Thank you for using Android Doctor"
 echo "Have a great day!"
