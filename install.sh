@@ -1,4 +1,4 @@
-Download_Url="https://raw.githubusercontent.com/Upokharel56/android-doctor/main/android-doctor_0.1.0_amd64.deb"
+Download_Url="https://raw.githubusercontent.com/Upokharel56/android-doctor/refs/heads/main/android-doctor_0.1.0_amd64.deb"
 
 # Check if the script is run as root
 if [ "$EUID" -ne 0 ]; then
@@ -14,7 +14,7 @@ cd "$TEMP_DIR"
 
 echo "Installing Android Doctor..."
 # Download the .deb file to the temporary directory
-curl -L -O "$Download_Url"
+curl -L -O https://raw.githubusercontent.com/Upokharel56/android-doctor/refs/heads/main/android-doctor_0.1.0_amd64.deb
 
 echo "\n\n\n"
 ls $TEMP_DIR
