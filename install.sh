@@ -14,10 +14,16 @@ mkdir -p "$TEMP_DIR"
 # clear
 echo "Installing Android Doctor..."
 # Download the .deb file to the temporary directory
-curl -O "$Download_Url" -o "$TEMP_DIR/package.deb"
+curl -O "$Download_Url" -o "$TEMP_DIR"
 
+echo "\n\n\n"
+ls $TEMP_DIR
+
+echo "\n\n\n"
 # Install the .deb package
 sudo dpkg -i "$TEMP_DIR/package.deb"
+
+
 
 # Check if the installation was successful
 if [ $? -ne 0 ]; then
