@@ -1,4 +1,4 @@
-Download_Url="https://drive.usercontent.google.com/download?id=1HDVD9O7aoB7d_AvsaEn_rou21BuxWm2u&export=download&confirm=t&uuid=1e365524-120f-454a-bac4-140e7e5ab719"
+Download_Url="https://raw.githubusercontent.com/Upokharel56/android-doctor/refs/heads/main/android-doctor_0.1.0_amd64.deb"
 
 # Check if the script is run as root
 if [ "$EUID" -ne 0 ]; then
