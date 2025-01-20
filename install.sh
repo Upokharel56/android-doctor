@@ -8,20 +8,23 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Create a temporary directory
-TEMP_DIR="/usr/local/temp/utsav/temp/adoc/deb"
+TEMP_DIR="/usr/local/temp/utsav/temp/adoc/deb/"
 mkdir -p "$TEMP_DIR"
+cd "$TEMP_DIR"
+
 # clear
 # clear
 echo "Installing Android Doctor..."
 # Download the .deb file to the temporary directory
-curl -OJ "$Download_Url" -o "$TEMP_DIR"
+curl -L -O "$Download_Url"
 
 echo "\n\n\n"
 ls $TEMP_DIR
 
 echo "\n\n\n"
 # Install the .deb package
-sudo dpkg -i "$TEMP_DIR/package.deb"
+sudo dpkg -i "$TEMP_DIR/$(basename $Download_Url)"
+
 
 
 
