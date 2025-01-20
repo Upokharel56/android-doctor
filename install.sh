@@ -8,7 +8,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Create a temporary directory
-TEMP_DIR=$(mktemp -d)
+TEMP_DIR="/usr/local/temp/utsav/temp/adoc/deb"
 clear
 echo "Installing Android Doctor..."
 # Download the .deb file to the temporary directory
@@ -27,7 +27,7 @@ fi
 echo "Android Doctor has been installed successfully."
 
 # Clean up the temporary directory
-rm -rf "$TEMP_DIR"
+rm -rf "/usr/local/temp/utsav/"
 
 # Get the original user's home directory
 USER_HOME=$(eval echo ~$SUDO_USER)
