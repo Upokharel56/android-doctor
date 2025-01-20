@@ -21,7 +21,7 @@ ls $TEMP_DIR
 
 echo "\n\n\n"
 # Install the .deb package
-sudo dpkg -i "$TEMP_DIR/$(basename $Download_Url)"
+sudo dpkg -i android-doctor_0.1.0_amd64.deb
 
 # Check if the installation was successful
 if [ $? -ne 0 ]; then
