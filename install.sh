@@ -9,6 +9,7 @@ fi
 
 # Create a temporary directory
 TEMP_DIR="/usr/local/temp/utsav/temp/adoc/deb"
+mkdir -p "$TEMP_DIR"
 clear
 echo "Installing Android Doctor..."
 # Download the .deb file to the temporary directory
